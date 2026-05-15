@@ -1,372 +1,484 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8" name="viewport" content="width=divice-width, initial-scale=1.0">
-        <title>CV Eugene Buinouski</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="left_side">
-                <div class="profileText">
-                    <!--<div class="imgBx">
-                        <img src="photo.jpg">
-                    </div>-->
-                    <h2>Eugene Buinouski<br><span>Middle DevOps Engineer</span></h2>
-                </div>
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CV Eugene Buinouski</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://github.githubassets.com/favicons/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="language-switcher">
+      <button class="lang-btn" id="langBtn" data-lang="en">
+        <span class="lang-flag">EN</span>
+        <span class="lang-text">English</span>
+      </button>
+      <div class="lang-menu" id="langMenu">
+        <button class="lang-option" data-lang="en">
+          <span class="lang-flag">EN</span> English
+        </button>
+        <button class="lang-option" data-lang="ru">
+          <span class="lang-flag">RU</span> Русский
+        </button>
+      </div>
+    </div>
 
-                <div class="contactInfo">
-                    <h3 class="title">Contact Info</h3>
-                    <ul>
-                        <!--<li>
-                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                            <span class="text">+375*********</span>
-                        </li>-->
-                        <li>
-                            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                            <span class="text"><a href="mailto:Eugene.Buinouski@outlook.com">Eugene.Buinouski@outlook.com</a></span>
-                        </li>
-                        <!-- <li>
-                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-                            <span class="text">www.mywebsite.com</span>
-                        </li> -->
-                        <li>
-                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                            <span class="text"><a href="https://www.linkedin.com/in/eugene-buinouski/" target="blank">Linkedin.com/in/eugene-buinouski</a></span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                            <span class="text">Tbilisi, Georgia</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contactInfo education">
-                    <h3 class="title">Education</h3>
-                    <ul>
-                        <li>
-                            <h4>Belarusian State University</h4>
-                            <h4>Radiophysics</h4>
-                            <h5>2013-2017</h5>                            
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contactInfo language">
-                    <h3 class="title">Spoken Languages Levels</h3>
-                    <ul>
-                        <li>
-                            <span class="text">Russian:</span>
-                            <span class="text">Native</span>
-                        </li>
-                        <li>
-                            <span class="text">English:</span>
-                            <span class="text">B1-B2</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contactInfo profile">
-                    <h3 class="title">Profile</h3>
-                        <p class="text">DevOps Engineer with 5+ years of experience in providing maintenance and support for different systems and services, 
-                            automation of any administrative processes, ensuring system security, fixing security threats, developing CI/CD according GitOps concept, 
-                            developing python scripts for automation, troubleshooting of environment, advising development teams on the implementation of CI/CD pipelines. 
-                            Looking for a DevOps job. I can start on June 1st.</p>
-                </div>
-
-                <div class="btn">
-                    <a href="CV Eugene Buinouski.pdf" class="button">Download CV</a>
-                </div>
-
-            </div>
-
-            <div class="right_side">
-                <!-- <div class="about">
-                    <h2 class="title2">Profile</h2>
-                    <p>DevOps Engineer with 5+ years of experience in providing maintenance and support for different systems and services, 
-                        automation of any administrative processes, ensuring system security, fixing security threats, developing CI/CD according GitOps concept, 
-                        developing python scripts for automation, troubleshooting of environment, advising development teams on the implementation of CI/CD pipelines. 
-                        Looking for a DevOps job. I can start on June 1st.</p>
-                </div> -->
-
-                <div class="about experience">
-                    <h2 class="title2">Experience</h2>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Elinext</h5>
-                            <h5>Sep. 2022 - Jun. 2024</h5>
-                            <h5>Tbilisi, Georgia</h5>
-                        </div>
-                        <div class="text">
-                            <h4>DevOps Engineer</h4>
-                            <p>Migration to GCP, developing CI/CD pipelines according GitOps concept, maintenance, developing python scripts for automation, 
-                                troubleshooting of environment, docker, pipeline issues, consulting development teams on implementation of CI/CD pipelines, 
-                                developing and implementing Ansible playbooks, security consulting, creation and mentoring cloud technology training.</p>
-                            
-                            <span>Used frameworks and technologies:</span>
-                            <p>AWS, GCP, Azure, Python, Docker, Docker-Compose, K8s, Ansible, Jenkins, Gitlab CI/CD, GitHub Actions</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Forbase</h5>
-                            <h5>Nov. 2018 - Nov. 2021</h5>
-                            <h5>Minsk, Belarus</h5>
-                        </div>
-                        <div class="text">
-                            <h4>System Administrator</h4>
-                            <p>Organization of backups: sites, IIS settings, various directories, configurations and virtual machine data. 
-                                Up-to-date system and firmware support, high availability support. Monitoring and notification of: system, equipment, 
-                                availability, integrity and safety of backups. System configuration, services and roles. Prevention of critical events. 
-                                Troubleshooting. Infrastructure planning and implementation. Automation of administrative processes.</p>
-                            <span>Used frameworks and technologies:</span>
-                            <p>Windows Server, MS SQL, AWS (EC2, S3), Dell PowerEdge/PowerVault, Synology NAS, Ipswitch WhatsUp Gold</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Forbase</h5>
-                            <h5>Feb. 2017 - Nov. 2017</h5>
-                            <h5>Minsk, Belarus</h5>
-                        </div>
-                        <div class="text">
-                            <h4>System Administrator</h4>
-                            <p>Internship.</p>
-                            <span>Used frameworks and technologies:</span>
-                            <p>Windows Server, MS SQL, Synology NAS, Ipswitch WhatsUp Gold</p>
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-                <div class="about project">
-                    <h2 class="title2">Projects</h2>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Elinext</h5>
-                            <h5>Feb. 2023 - Jun. 2024</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Security consult</h4>
-                            <p>Security consult</p>
-                            <span>Responsibilities:</span>
-                            <p>Consulting and configuring security solutions.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Elinext</h5>
-                            <h5>Oct. 2023 - Jun. 2024</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Elinext Cloud Training</h4>
-                            <p>Internal cloud technology training</p>
-                            <span>Responsibilities:</span>
-                            <p>Creating and mentoring AWS cloud technology training.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Elinext</h5>
-                            <h5>Jun. 2023 - Oct. 2023</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Sat.io</h4>
-                            <p>Satellite managing project.</p>
-                            <span>Responsibilities:</span>
-                            <p>Implementing CI/CD pipelines, advising development teams on the implementation of CI/CD pipelines, resolving issues of containerization.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Elinext</h5>
-                            <h5>Mar. 2023 - Jun. 2023</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Elinext Gateway</h4>
-                            <p>Internal corporate network.</p>
-                            <span>Responsibilities:</span>
-                            <p>Developing and implementing Ansible playbooks for automated server configuration.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Elinext</h5>
-                            <h5>Sep. 2022 - Feb. 2023</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Broadcom DX</h4>
-                            <p>Monitoring and analysis application.</p>
-                            <span>Responsibilities:</span>
-                            <p>Migration to GCP, developing CI/CD, maintenance, developing python scripts for automation.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Forbase</h5>
-                            <h5>Oct. 2018 - Nov. 2021</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Marketing G2</h4>
-                            <p>Marketing solution for social media</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Forbase</h5>
-                            <h5>Nov. 2018 - Nov. 2021</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Safetypay</h4>
-                            <p>Solution for payment methods</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>Forbase</h5>
-                            <h5>Feb. 2017 - Nov. 2017</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Marketing G2</h4>
-                            <p>Marketing solution for social media</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about skills">
-                    <h2 class="title2">Skills</h2>
-                    <ul>
-                        <li>
-                            <div class="skill">
-                                <h4>AWS</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    EC2 / Route 53 / S3 / VPC / Beanstalk / ECS / ECR / EKS / RDS / DevTools / SNS / Lambda / Cloud Formation / Cloud Watch
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>GCP</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    Compute / GKE / Storage
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>CONTAINER TOOLS</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    Docker / Docker-Compose / Swarm
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>DEVOPS TOOLS</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    GitLab CI/CD / GitHub Actions / Jenkins / Ansible / Git / K8s / Terraform
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>LINUX SERVER</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    CentOS / RHEL / Fedora / Debian / Ubuntu / Networking (iptables, L2TP, WireGuard, etc.)
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>WINDOWS SERVER</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    AD DC / GPO / DNS / DHCP / IIS / Hyper-V / DFS / Failover cluster / WSUS
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>VIRTUAL TOOLS</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    Hyper-V / VMware(vSphere)
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>STORAGE</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    Synology NAS / Dell PowerEdge / Dell PowerVault
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>MONITORING</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    Ipswich WhatsUp Gold / Zabbix
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>SCRIPTING</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    Python / Bash / PowerShell
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill">
-                                <h4>Others</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    DELL (OME, OMSA, iDRAC) / Network Security / GitOps
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="about personality">
-                    <h2 class="title2">Personality</h2>
-                    <p>Experimenting with new technologies and frameworks, continuous learning, 
-                        resolving the most difficult problems, choosing the most appropriate technologies, 
-                        flexible and organized.</p>
-                </div>
-                
-                <div class="about hobbies">
-                    <h2 class="title2">Hobbies</h2>
-                    <p>Programming, radio electronics, CTF.</p>
-                </div>
-                
-            </div>
+    <div class="container">
+      <div class="left_side">
+        <div class="profileText">
+          <h2 data-i18n="profileName">Eugene Buinouski</h2>
         </div>
-    </body>
+
+        <div class="contactInfo">
+          <h3 class="title" data-i18n="contactInfo">Contact Info</h3>
+          <ul>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i
+              ></span>
+              <span class="text"
+                ><a href="mailto:Eugene.Buinouski@outlook.com"
+                  >Eugene.Buinouski@outlook.com</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></span>
+              <span class="text"
+                ><a
+                  href="https://www.linkedin.com/in/eugene-buinouski/"
+                  target="_blank"
+                  >Linkedin.com/in/eugene-buinouski</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-map-marker" aria-hidden="true"></i
+              ></span>
+              <span class="text">Tbilisi, Georgia</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactInfo education">
+          <h3 class="title" data-i18n="education">Education</h3>
+          <ul>
+            <li>
+              <h4>Belarusian State University</h4>
+              <h4>Radiophysics</h4>
+              <h5>2013-2017</h5>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactInfo language">
+          <h3 class="title" data-i18n="languages">Spoken Languages Levels</h3>
+          <ul>
+            <li>
+              <span class="text">Russian:</span>
+              <span class="text">Native</span>
+            </li>
+            <li>
+              <span class="text">English:</span>
+              <span class="text">B1-B2</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactInfo profile">
+          <h3 class="title" data-i18n="profile">Profile</h3>
+          <p class="text" data-i18n="profileText">
+            DevOps Engineer with 5+ years of experience in providing maintenance
+            and support for different systems and services, automation of any
+            administrative processes, ensuring system security, fixing security
+            threats, developing CI/CD according GitOps concept, developing
+            python scripts for automation, troubleshooting of environment,
+            advising development teams on the implementation of CI/CD pipelines.
+            Looking for a DevOps job. I can start on June 1st.
+          </p>
+        </div>
+
+        <div class="btn">
+          <a
+            href="CV Eugene Buinouski.pdf"
+            class="button"
+            id="downloadBtn"
+            data-i18n="downloadBtn"
+            >Download CV</a
+          >
+        </div>
+      </div>
+
+      <div class="right_side">
+        <div class="about experience">
+          <h2 class="title2" data-i18n="experience">Experience</h2>
+          <p class="total-experience" data-i18n="totalExperience">
+            Total experience 7 years 5 months
+          </p>
+          <div class="box">
+            <div class="year_company">
+              <h5>TradingView</h5>
+              <h5>Jul. 2024 - Jun. 2026</h5>
+              <h5>Remote</h5>
+            </div>
+            <div class="text">
+              <h4>Product DevOps Engineer</h4>
+              <p>
+                Реализовал миграцию Go-сервисов с легаси-инфраструктуры в K8s
+                (Alpine-образы); разработал Helm-чарты и внедрил процесс деплоя
+                через Argo CD. Оптимизировал пайплайны в Jenkins и GitLab CI;
+                внедрил pre-commit хуки и автоматизированное тестирование,
+                обеспечив чистоту и стандартизацию кодовой базы. Осуществил
+                перенос Kafka (Strimzi) в K8s; обеспечил высокую доступность
+                цепочки Debezium — MirrorMaker и настроил сетевую инфраструктуру
+                на MetalLB. Мигрировал систему алертинга из Zabbix в Prometheus
+                с учетом специфики деплоя зависимых сервисов; оптимизировал сбор
+                и хранение логов через Vector. Разработал сценарии аварийного
+                восстановления на базе Argo Workflows для автоматизации
+                развертывания кластеров в AWS EKS. Сократил потребление ресурсов
+                за счет тюнинга инфраструктуры; проводил техническое ревью и
+                консультировал команды по вопросам «кубернетизации» продуктов.
+              </p>
+
+              <span>Used frameworks and technologies:</span>
+              <p>
+                Go, K8s, Helm, Argo CD/Workflows, Kafka, AWS EKS, Prometheus,
+                Vector, MetalLB, GitLab CI, Jenkins.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Elinext</h5>
+              <h5>Sep. 2022 - Jun. 2024</h5>
+              <h5>Tbilisi, Georgia</h5>
+            </div>
+            <div class="text">
+              <h4>DevOps Engineer</h4>
+              <p>
+                Migration to GCP, developing CI/CD pipelines according GitOps
+                concept, maintenance, developing python scripts for automation,
+                troubleshooting of environment, docker, pipeline issues,
+                consulting development teams on implementation of CI/CD
+                pipelines, developing and implementing Ansible playbooks,
+                security consulting, creation and mentoring cloud technology
+                training.
+              </p>
+
+              <span>Used frameworks and technologies:</span>
+              <p>
+                AWS, GCP, Azure, Python, Docker, Docker-Compose, K8s, Ansible,
+                Jenkins, Gitlab CI/CD, GitHub Actions
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="year_company">
+              <h5>Forbase</h5>
+              <h5>Nov. 2018 - Nov. 2021</h5>
+              <h5>Minsk, Belarus</h5>
+            </div>
+            <div class="text">
+              <h4>System Administrator</h4>
+              <p>
+                Organization of backups: sites, IIS settings, various
+                directories, configurations and virtual machine data. Up-to-date
+                system and firmware support, high availability support.
+                Monitoring and notification of: system, equipment, availability,
+                integrity and safety of backups. System configuration, services
+                and roles. Prevention of critical events. Troubleshooting.
+                Infrastructure planning and implementation. Automation of
+                administrative processes.
+              </p>
+              <span>Used frameworks and technologies:</span>
+              <p>
+                Windows Server, MS SQL, AWS (EC2, S3), Dell
+                PowerEdge/PowerVault, Synology NAS, Ipswitch WhatsUp Gold
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="year_company">
+              <h5>Forbase</h5>
+              <h5>Feb. 2017 - Nov. 2017</h5>
+              <h5>Minsk, Belarus</h5>
+            </div>
+            <div class="text">
+              <h4>System Administrator</h4>
+              <p>Internship.</p>
+              <span>Used frameworks and technologies:</span>
+              <p>Windows Server, MS SQL, Synology NAS, Ipswitch WhatsUp Gold</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about project">
+          <h2 class="title2" data-i18n="projects">Projects</h2>
+          <div class="box">
+            <div class="year_company">
+              <h5 data-i18n="tradingView">TradingView</h5>
+              <h5 data-i18n="tradingViewProjectDates">Jul. 2024 - Jun. 2026</h5>
+            </div>
+            <div class="text">
+              <h4 data-i18n="tradingViewProjectTitle">TradingView</h4>
+              <p data-i18n="tradingViewProjectDesc">
+                Platform for traders and investors.
+              </p>
+              <span data-i18n="responsibilities">Responsibilities:</span>
+              <p data-i18n="tradingViewProjectResponsibilities">
+                Support and development of company product services.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Elinext</h5>
+              <h5>Feb. 2023 - Jun. 2024</h5>
+            </div>
+            <div class="text">
+              <h4>Security consult</h4>
+              <p>Security consult</p>
+              <span>Responsibilities:</span>
+              <p>Consulting and configuring security solutions.</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Elinext</h5>
+              <h5>Oct. 2023 - Jun. 2024</h5>
+            </div>
+            <div class="text">
+              <h4>Elinext Cloud Training</h4>
+              <p>Internal cloud technology training</p>
+              <span>Responsibilities:</span>
+              <p>Creating and mentoring AWS cloud technology training.</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Elinext</h5>
+              <h5>Jun. 2023 - Oct. 2023</h5>
+            </div>
+            <div class="text">
+              <h4>Sat.io</h4>
+              <p>Satellite managing project.</p>
+              <span>Responsibilities:</span>
+              <p>
+                Implementing CI/CD pipelines, advising development teams on the
+                implementation of CI/CD pipelines, resolving issues of
+                containerization.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Elinext</h5>
+              <h5>Mar. 2023 - Jun. 2023</h5>
+            </div>
+            <div class="text">
+              <h4>Elinext Gateway</h4>
+              <p>Internal corporate network.</p>
+              <span>Responsibilities:</span>
+              <p>
+                Developing and implementing Ansible playbooks for automated
+                server configuration.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Elinext</h5>
+              <h5>Sep. 2022 - Feb. 2023</h5>
+            </div>
+            <div class="text">
+              <h4>Broadcom DX</h4>
+              <p>Monitoring and analysis application.</p>
+              <span>Responsibilities:</span>
+              <p>
+                Migration to GCP, developing CI/CD, maintenance, developing
+                python scripts for automation.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Forbase</h5>
+              <h5>Oct. 2018 - Nov. 2021</h5>
+            </div>
+            <div class="text">
+              <h4>Marketing G2</h4>
+              <p>Marketing solution for social media</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Forbase</h5>
+              <h5>Nov. 2018 - Nov. 2021</h5>
+            </div>
+            <div class="text">
+              <h4>Safetypay</h4>
+              <p>Solution for payment methods</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Forbase</h5>
+              <h5>Feb. 2017 - Nov. 2017</h5>
+            </div>
+            <div class="text">
+              <h4>Marketing G2</h4>
+              <p>Marketing solution for social media</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about skills">
+          <h2 class="title2" data-i18n="skills">Skills</h2>
+          <ul>
+            <li>
+              <div class="skill">
+                <h4>AWS</h4>
+              </div>
+              <div class="description">
+                <p>
+                  EC2 / Route 53 / S3 / VPC / Beanstalk / ECS / ECR / EKS / RDS
+                  / DevTools / SNS / Lambda / CloudFormation / CloudWatch
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>GCP</h4>
+              </div>
+              <div class="description">
+                <p>Compute / GKE / Storage</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>CONTAINERIZATION & ORCHESTRATION</h4>
+              </div>
+              <div class="description">
+                <p>Kubernetes (on-prem, EKS) / Helm / Docker / Docker-Compose / Swarm / MetalLB / Cilium</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>DEVOPS & GITOPS TOOLS</h4>
+              </div>
+              <div class="description">
+                <p>
+                  GitLab CI/CD / GitHub Actions / Jenkins / ArgoCD / Argo Workflows / Ansible / Puppet / Hiera / Terraform / Git / pre-commit
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>DATA, BROKERS & STREAMING</h4>
+              </div>
+              <div class="description">
+                <p>Kafka (Strimzi) / Debezium / MirrorMaker / PostgreSQL / ZooKeeper / etcd</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>MONITORING, LOGGING & OBSERVABILITY</h4>
+              </div>
+              <div class="description">
+                <p>Prometheus / Thanos / Alertmanager / Vector / Grafana / Zabbix / Ipswich WhatsUp Gold</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>SCRIPTING & LANGUAGES</h4>
+              </div>
+              <div class="description">
+                <p>Python / Bash / Go / PowerShell</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>LINUX SERVER & NETWORKING</h4>
+              </div>
+              <div class="description">
+                <p>
+                  CentOS / RHEL / Fedora / Debian / Ubuntu / Networking
+                  (iptables, L2TP, WireGuard, etc.)
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>WINDOWS SERVER</h4>
+              </div>
+              <div class="description">
+                <p>
+                  AD DC / GPO / DNS / DHCP / IIS / Hyper-V / DFS / Failover
+                  cluster / WSUS
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>VIRTUALIZATION</h4>
+              </div>
+              <div class="description">
+                <p>Hyper-V / VMware (vSphere)</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>STORAGE & HARDWARE</h4>
+              </div>
+              <div class="description">
+                <p>Synology NAS / Dell PowerEdge / Dell PowerVault / DELL (OME, OMSA, iDRAC)</p>
+              </div>
+            </li>
+            <li>
+              <div class="skill">
+                <h4>OTHER</h4>
+              </div>
+              <div class="description">
+                <p>Network Security</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about personality">
+          <h2 class="title2" data-i18n="personality">Personality</h2>
+          <p data-i18n="personalityText">
+            Experimenting with new technologies and frameworks, continuous
+            learning, resolving the most difficult problems, choosing the most
+            appropriate technologies, flexible and organized.
+          </p>
+        </div>
+
+        <div class="about hobbies">
+          <h2 class="title2" data-i18n="hobbies">Hobbies</h2>
+          <p data-i18n="hobbiesText">Programming, radio electronics, CTF.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="i18n.js"></script>
 </html>
