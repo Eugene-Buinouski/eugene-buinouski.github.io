@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Popins", serif;
+  font-family: "Inter", sans-serif;
 }
 body {
   background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -13,6 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px 0;
+  font-size: 15px;
 }
 
 .language-switcher {
@@ -104,7 +105,7 @@ body {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   min-height: 1100px;
   margin: 0px;
   background: #fff;
@@ -366,7 +367,7 @@ p {
     padding-bottom: 14px;
   }
   .contactInfo {
-    padding-top: 28px;
+    padding-top: 18px;
   }
   .contactInfo .title {
     margin-bottom: 10px;
@@ -412,6 +413,7 @@ p {
   }
   .btn {
     width: 80%;
+    margin: 18px auto 0;
   }
   .button {
     padding: 12px 20px;
@@ -424,6 +426,9 @@ p {
   .lang-btn {
     padding: 8px 12px;
     font-size: 12px;
+  }
+  .lang-text {
+    display: none;
   }
 }
 
