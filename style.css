@@ -106,11 +106,12 @@ body {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 1100px;
+  min-height: auto;
   margin: 0px;
   background: #fff;
   display: grid;
   grid-template-columns: 0.9fr 2fr;
+  align-items: stretch;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
   animation: slideIn 0.6s ease-out;
 }
@@ -198,10 +199,39 @@ body {
   color: #fff;
   font-weight: 300;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .contactInfo ul li span a:hover {
   color: #03a9f4;
+}
+.copyable-email {
+  position: relative;
+  cursor: pointer;
+}
+.copyable-email::after {
+  content: attr(data-copy-label);
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  padding: 6px 9px;
+  border-radius: 5px;
+  background: #03a9f4;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+.copyable-email:hover::after,
+.copyable-email:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 .contactInfo.education li {
   margin-bottom: 15px;
@@ -258,9 +288,9 @@ p {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   background: #f9f9f9;
 }
 
@@ -270,12 +300,15 @@ p {
   transform: translateX(5px);
 }
 .box .year_company {
-  min-width: 135px;
+  width: 120px;
+  flex: 0 0 140px;
   padding: 5px;
+  margin-right: 16px;
 }
 .box .year_company h5 {
-  color: #848c90;
-  font-weight: 600;
+  color: #444;
+  font-weight: 500;
+  font-size: 14px;
 }
 .box .text {
   padding: 5px;
@@ -332,6 +365,12 @@ p {
   font-size: 18px;
   width: 20px;
 }
+
+/* Tech lists will be rendered inline as plain text separated by ' / ' */
+/* spacing for tech lists under responsibilities */
+.tech-list {
+  margin-top: 8px;
+}
 .skill {
   min-width: 112px;
   padding: 5px;
@@ -346,6 +385,14 @@ p {
 }
 .description p {
   margin-bottom: 0;
+}
+/* Styles for i18n-generated lists */
+.i18n-list {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+.i18n-list li {
+  margin-bottom: 6px;
 }
 @media (max-width: 992px) {
   .button {
@@ -420,8 +467,8 @@ p {
     font-size: 14px;
   }
   .language-switcher {
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
   }
   .lang-btn {
     padding: 8px 12px;
@@ -430,6 +477,45 @@ p {
   .lang-text {
     display: none;
   }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px 0;
+  }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: auto;
+    height: auto;
+    grid-auto-rows: auto;
+  }
+  .language-switcher {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 100;
+  }
+  .container .left_side .btn {
+    width: 100%;
+    margin: 12px 0 0;
+  }
+  .container .left_side .button {
+    width: 100%;
+    text-align: center;
+  }
+  .about .box .year_company {
+    margin-bottom: 8px;
+    width: 200px;
+    flex: 0 0 0px;
+    padding: 5px;
+    margin-right: 16px;
+  }
+  .about .box {
+    margin-bottom: 6px;
+    padding: 8px;
+  }
+  /* Removed .tech-badge styles since techs are inline text now */
 }
 
 @keyframes fadeInOut {

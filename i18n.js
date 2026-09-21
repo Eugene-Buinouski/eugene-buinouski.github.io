@@ -17,7 +17,7 @@ const translations = {
     russian: "Russian",
     english: "English",
     native: "Native",
-    levelB1B2: "B1-B2",
+    levelB1B2: "B2",
 
     profile: "Profile",
     profileText:
@@ -31,13 +31,23 @@ const translations = {
     hobbies: "Hobbies",
 
     downloadBtn: "Download CV",
+    copyEmail: "Copy",
+    copiedEmail: "Copied",
 
     elinext: "Elinext",
     elinextDates: "Sep. 2022 - Jun. 2024",
     elinextLocation: "Tbilisi, Georgia",
     elinextRole: "DevOps Engineer",
-    elinextDesc:
-      "Migration to GCP, developing CI/CD pipelines according GitOps concept, maintenance, developing python scripts for automation, troubleshooting of environment, docker, pipeline issues, consulting development teams on implementation of CI/CD pipelines, developing and implementing Ansible playbooks, security consulting, creation and mentoring cloud technology training.",
+    elinextDesc: [
+      "Migration to GCP",
+      "Developing CI/CD pipelines according to GitOps concept",
+      "Maintenance and troubleshooting of environments, Docker and pipelines",
+      "Developing Python scripts for automation",
+      "Consulting development teams on CI/CD implementation",
+      "Developing and implementing Ansible playbooks",
+      "Security consulting",
+      "Creating and mentoring cloud technology training",
+    ],
     usedTech: "Used frameworks and technologies:",
     elinextTech:
       "AWS, GCP, Azure, Python, Docker, Docker-Compose, K8s, Ansible, Jenkins, Gitlab CI/CD, GitHub Actions",
@@ -46,8 +56,15 @@ const translations = {
     forbase: "Forbase",
     forbaseSysAdminDates1: "Nov. 2018 - Nov. 2021",
     forbaseLocation1: "Minsk, Belarus",
-    forbaseSysAdminDesc:
-      "Organization of backups: sites, IIS settings, various directories, configurations and virtual machine data. Up-to-date system and firmware support, high availability support. Monitoring and notification of: system, equipment, availability, integrity and safety of backups. System configuration, services and roles. Prevention of critical events. Troubleshooting. Infrastructure planning and implementation. Automation of administrative processes.",
+    forbaseSysAdminDesc: [
+      "Organization of backups: sites, IIS settings, various directories, configurations and virtual machine data",
+      "Keeping systems and firmware up-to-date, ensuring high availability",
+      "Monitoring and notifications for systems, equipment, availability and backup integrity",
+      "System configuration, services and roles",
+      "Prevention of critical events and troubleshooting",
+      "Infrastructure planning and implementation",
+      "Automation of administrative processes",
+    ],
     forbaseTech1:
       "Windows Server, MS SQL, AWS (EC2, S3), Dell PowerEdge/PowerVault, Synology NAS, Ipswitch WhatsUp Gold",
 
@@ -60,8 +77,20 @@ const translations = {
     tradingViewDates: "Jul. 2024 - Jun. 2026",
     tradingViewLocation: "Tbilisi, Georgia",
     tradingViewRole: "Product DevOps Engineer",
-    tradingViewDesc:
-      "Migration of product architecture (Go stack) to Kubernetes, developing Helm charts and k8s-native Docker images, implementing GitOps concepts via ArgoCD, executing a Disaster Recovery strategy using Argo Workflows and AWS EKS, modernizing and maintaining Jenkins and GitLab CI pipelines for hybrid deployment and automated testing, introducing pre-commit hooks and linters for code quality control, migrating and orchestrating Kafka in K8s via Strimzi Operator, maintaining data streaming pipelines (Debezium, MirrorMaker), optimizing deployments and reducing cluster resource consumption, troubleshooting production incidents at both infrastructure and code levels (including Go SIGSEGV fixes), migrating monitoring from Zabbix to Prometheus with false-positive alert suppression, configuring log collection via Vector, testing networking solutions (MetalLB, Cilium), consulting adjacent development teams on K8s migration, conducting architectural reviews, and providing ready-to-use infrastructure templates.",
+    tradingViewDesc: [
+      "Migration of product architecture (Go stack) to Kubernetes",
+      "Developing Helm charts and k8s-native Docker images",
+      "Implementing GitOps concepts via ArgoCD",
+      "Executing Disaster Recovery strategies using Argo Workflows and AWS EKS",
+      "Modernizing and maintaining Jenkins and GitLab CI pipelines for hybrid deployment and automated testing",
+      "Introducing pre-commit hooks and linters for code quality control",
+      "Migrating and orchestrating Kafka in K8s via Strimzi Operator and maintaining streaming pipelines (Debezium, MirrorMaker)",
+      "Optimizing deployments and reducing cluster resource consumption",
+      "Troubleshooting production incidents at both infrastructure and code levels (including Go SIGSEGV fixes)",
+      "Migrating monitoring from Zabbix to Prometheus with alert tuning",
+      "Configuring log collection via Vector and testing networking solutions (MetalLB, Cilium)",
+      "Consulting development teams on K8s migration and conducting architectural reviews",
+    ],
     tradingViewTech:
       "Kubernetes (on-prem, AWS EKS), Helm, ArgoCD, Argo Workflows, Docker, Jenkins, GitLab CI, pre-commit, Kafka (Strimzi), Debezium, MirrorMaker, PostgreSQL, ZooKeeper, etcd, Prometheus, Thanos, Alertmanager, Vector, Zabbix, Grafana, Puppet, Hiera, MetalLB, Cilium, AWS Route53, Python, Bash, Go.",
     tradingViewProjectDates: "Jul. 2024 - Jun. 2026",
@@ -179,7 +208,7 @@ const translations = {
     russian: "Русский",
     english: "Английский",
     native: "Родной",
-    levelB1B2: "B1-B2",
+    levelB1B2: "B2",
 
     profile: "Профиль",
     profileText:
@@ -193,13 +222,23 @@ const translations = {
     hobbies: "Хобби",
 
     downloadBtn: "Скачать CV",
+    copyEmail: "Скопировать",
+    copiedEmail: "Скопировано",
 
     elinext: "Elinext",
     elinextDates: "Сен. 2022 - Июн. 2024",
     elinextLocation: "Тбилиси, Грузия",
     elinextRole: "DevOps Engineer",
-    elinextDesc:
-      "Миграция на GCP, разработка CI/CD pipelines по концепции GitOps, обслуживание, разработка скриптов на Python для автоматизации, устранение неполадок в окружении, Docker, проблемы с pipelines, консультирование команд разработки по внедрению CI/CD pipelines, разработка и внедрение Ansible playbooks, консультирование по безопасности, создание и менторство в обучении облачным технологиям.",
+    elinextDesc: [
+      "Миграция на GCP",
+      "Разработка CI/CD pipelines по концепции GitOps",
+      "Обслуживание и устранение неполадок в окружении, Docker и pipelines",
+      "Разработка скриптов на Python для автоматизации",
+      "Консультирование команд разработки по внедрению CI/CD",
+      "Разработка и внедрение Ansible playbooks",
+      "Консалтинг по безопасности",
+      "Создание и менторство в обучении облачным технологиям",
+    ],
     usedTech: "Используемые фреймворки и технологии:",
     elinextTech:
       "AWS, GCP, Azure, Python, Docker, Docker-Compose, K8s, Ansible, Jenkins, Gitlab CI/CD, GitHub Actions",
@@ -208,8 +247,15 @@ const translations = {
     forbase: "Forbase",
     forbaseSysAdminDates1: "Ноя. 2018 - Ноя. 2021",
     forbaseLocation1: "Минск, Беларусь",
-    forbaseSysAdminDesc:
-      "Организация резервных копий: сайтов, настроек IIS, различных директорий, конфигураций и данных виртуальных машин. Поддержка системы и прошивки в актуальном состоянии, обеспечение высокой доступности. Мониторинг и оповещение: система, оборудование, доступность, целостность и безопасность резервных копий. Конфигурация системы, сервисов и ролей. Предотвращение критических событий. Устранение неполадок. Планирование и внедрение инфраструктуры. Автоматизация административных процессов.",
+    forbaseSysAdminDesc: [
+      "Организация резервных копий: сайтов, настроек IIS, различных директорий, конфигураций и данных виртуальных машин",
+      "Поддержка системы и прошивки в актуальном состоянии, обеспечение высокой доступности",
+      "Мониторинг и оповещение: система, оборудование, доступность, целостность и безопасность резервных копий",
+      "Конфигурация системы, сервисов и ролей",
+      "Предотвращение критических событий и устранение неполадок",
+      "Планирование и внедрение инфраструктуры",
+      "Автоматизация административных процессов",
+    ],
     forbaseTech1:
       "Windows Server, MS SQL, AWS (EC2, S3), Dell PowerEdge/PowerVault, Synology NAS, Ipswitch WhatsUp Gold",
 
@@ -222,8 +268,20 @@ const translations = {
     tradingViewDates: "Июл. 2024 - Июн. 2026",
     tradingViewLocation: "Тбилиси, Грузия",
     tradingViewRole: "Product DevOps Engineer",
-    tradingViewDesc:
-      "Миграция продуктовой архитектуры (Go-стек) в Kubernetes, разработка Helm-чартов и k8s-native Docker-образов, внедрение концепции GitOps через ArgoCD, реализация стратегии Disaster Recovery с использованием Argo Workflows и AWS EKS, модернизация и поддержка Jenkins и GitLab CI пайплайнов для гибридного деплоя и автоматического тестирования, внедрение pre-commit хуков и линтеров для контроля качества кода, миграция и оркестрация Kafka в K8s через Strimzi Operator, поддержка транспортных цепочек данных (Debezium, MirrorMaker), оптимизация деплоя и снижение потребления ресурсов кластера, траблшутинг production-инцидентов на инфраструктурном и кодовом уровне (включая fix SIGSEGV на Go), миграция мониторинга из Zabbix в Prometheus с настройкой подавления ложных алертов, конфигурация сбора логов через Vector, тестирование сетевых решений (MetalLB, Cilium), консалтинг смежных команд по миграции в K8s, архитектурное ревью и предоставление готовых инфраструктурных шаблонов.",
+    tradingViewDesc: [
+      "Миграция продуктовой архитектуры (Go-стек) в Kubernetes",
+      "Разработка Helm-чартов и k8s-native Docker-образов",
+      "Внедрение концепции GitOps через ArgoCD",
+      "Реализация стратегий Disaster Recovery с использованием Argo Workflows и AWS EKS",
+      "Модернизация и поддержка Jenkins и GitLab CI пайплайнов для гибридного деплоя и автоматического тестирования",
+      "Внедрение pre-commit хуков и линтеров для контроля качества кода",
+      "Миграция и оркестрация Kafka в K8s через Strimzi Operator, поддержка Debezium и MirrorMaker",
+      "Оптимизация деплоя и снижение потребления ресурсов кластера",
+      "Траблшутинг production-инцидентов на инфраструктурном и кодовом уровне (включая исправление SIGSEGV на Go)",
+      "Миграция мониторинга из Zabbix в Prometheus с настройкой подавления ложных алертов",
+      "Конфигурация сбора логов через Vector и тестирование сетевых решений (MetalLB, Cilium)",
+      "Консалтинг команд по миграции в K8s и проведение архитектурных ревью",
+    ],
     tradingViewTech:
       "Kubernetes, Helm, ArgoCD, Argo Workflows, Docker, Jenkins, GitLab CI, pre-commit, Kafka (Strimzi), Debezium, MirrorMaker, PostgreSQL, ZooKeeper, etcd, Prometheus, Thanos, Alertmanager, Vector, Zabbix, Grafana, Puppet, Hiera, MetalLB, Cilium, AWS Route53, Python, Bash, Go.",
     tradingViewProjectDates: "Июл. 2024 - Июн. 2026",
@@ -331,6 +389,7 @@ let currentLang = localStorage.getItem("selectedLang") || "en";
 // Инициализация
 document.addEventListener("DOMContentLoaded", function () {
   initLanguageSwitcher();
+  initEmailCopy();
   applyLanguage(currentLang);
 });
 
@@ -381,12 +440,20 @@ function updateLangButton() {
 function applyLanguage(lang) {
   const t = translations[lang];
 
+  const emailLink = document.querySelector(".copyable-email");
+  if (emailLink) {
+    emailLink.dataset.copyLabel = t.copyEmail;
+    emailLink.setAttribute("aria-label", `${t.copyEmail}: ${emailLink.textContent}`);
+  }
+
   // Update elements with data-i18n
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
     if (t[key]) {
       if (key === "profileName") {
         el.innerHTML = `${t.profileName}<br><span>${t.profileTitle}</span>`;
+      } else if (Array.isArray(t[key])) {
+        renderValueToElement(el, t[key]);
       } else {
         el.textContent = t[key];
       }
@@ -407,8 +474,10 @@ function applyLanguage(lang) {
   );
   if (languageSpans[0]) languageSpans[0].textContent = t.russian + ":";
   if (languageSpans[1]) languageSpans[1].textContent = t.native;
-  if (languageSpans[2]) languageSpans[2].textContent = t.english + ":";
-  if (languageSpans[3]) languageSpans[3].textContent = t.levelB1B2;
+  // Combine English label and level into a single line
+  if (languageSpans[2])
+    languageSpans[2].textContent = `${t.english}: ${t.levelB1B2}`;
+  if (languageSpans[3]) languageSpans[3].textContent = "";
 
   // Update download button
   const downloadBtn = document.getElementById("downloadBtn");
@@ -418,6 +487,75 @@ function applyLanguage(lang) {
 
   // Apply to all text content that needs translation
   applyContentTranslations(lang);
+}
+
+function initEmailCopy() {
+  const emailLink = document.querySelector(".copyable-email");
+  if (!emailLink) return;
+
+  emailLink.addEventListener("click", async function (event) {
+    event.preventDefault();
+    const email = emailLink.textContent.trim();
+
+    try {
+      await copyText(email);
+      emailLink.classList.add("copied");
+      emailLink.dataset.copyLabel = translations[currentLang].copiedEmail;
+      setTimeout(() => {
+        emailLink.classList.remove("copied");
+        emailLink.dataset.copyLabel = translations[currentLang].copyEmail;
+      }, 1500);
+    } catch (error) {
+      emailLink.dataset.copyLabel = translations[currentLang].copyEmail;
+    }
+  });
+}
+
+async function copyText(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.position = "fixed";
+  textArea.style.opacity = "0";
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  const copied = document.execCommand("copy");
+  textArea.remove();
+
+  if (!copied) throw new Error("Copy command failed");
+}
+
+// Helper: render string or array of strings into an element.
+function renderValueToElement(el, value) {
+  if (!el) return;
+  if (Array.isArray(value)) {
+    el.innerHTML =
+      '<ul class="i18n-list">' +
+      value.map((v) => `<li>${v}</li>`).join("") +
+      "</ul>";
+  } else {
+    el.textContent = value;
+  }
+}
+
+// Helper: render comma-separated tech string (or array) as badges
+function renderTechBadges(el, techs) {
+  if (!el) return;
+  let items = [];
+  if (Array.isArray(techs)) items = techs;
+  else if (typeof techs === "string")
+    items = techs
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+  // Render as plain inline text separated by ' / ' and mark as tech-list for spacing
+  el.textContent = items.join(" / ");
+  el.classList.add("tech-list");
 }
 
 function applyContentTranslations(lang) {
@@ -436,9 +574,8 @@ function applyContentTranslations(lang) {
     if (h4) h4.textContent = t.tradingViewRole;
     const textSpan = experienceBoxes[0].querySelector(".text span");
     const paragraphs = experienceBoxes[0].querySelectorAll(".text p");
-    if (paragraphs[0]) paragraphs[0].textContent = t.tradingViewDesc;
-    if (textSpan) textSpan.textContent = t.usedTech;
-    if (paragraphs[1]) paragraphs[1].textContent = t.tradingViewTech;
+    if (paragraphs[0]) renderValueToElement(paragraphs[0], t.tradingViewDesc);
+    if (paragraphs[1]) renderTechBadges(paragraphs[1], t.tradingViewTech);
   }
 
   // Elinext position
@@ -451,9 +588,8 @@ function applyContentTranslations(lang) {
     if (h4) h4.textContent = t.elinextRole;
     const textSpan = experienceBoxes[1].querySelector(".text span");
     const paragraphs = experienceBoxes[1].querySelectorAll(".text p");
-    if (paragraphs[0]) paragraphs[0].textContent = t.elinextDesc;
-    if (textSpan) textSpan.textContent = t.usedTech;
-    if (paragraphs[1]) paragraphs[1].textContent = t.elinextTech;
+    if (paragraphs[0]) renderValueToElement(paragraphs[0], t.elinextDesc);
+    if (paragraphs[1]) renderTechBadges(paragraphs[1], t.elinextTech);
   }
 
   // Forbase System Administrator (first position)
@@ -466,9 +602,9 @@ function applyContentTranslations(lang) {
     if (h4) h4.textContent = t.forbaseAdminTitle;
     const textSpan = experienceBoxes[2].querySelector(".text span");
     const paragraphs = experienceBoxes[2].querySelectorAll(".text p");
-    if (paragraphs[0]) paragraphs[0].textContent = t.forbaseSysAdminDesc;
-    if (textSpan) textSpan.textContent = t.usedTech;
-    if (paragraphs[1]) paragraphs[1].textContent = t.forbaseTech1;
+    if (paragraphs[0])
+      renderValueToElement(paragraphs[0], t.forbaseSysAdminDesc);
+    if (paragraphs[1]) renderTechBadges(paragraphs[1], t.forbaseTech1);
   }
 
   // Forbase System Administrator (second position)
@@ -482,8 +618,7 @@ function applyContentTranslations(lang) {
     const textSpan = experienceBoxes[3].querySelector(".text span");
     const paragraphs = experienceBoxes[3].querySelectorAll(".text p");
     if (paragraphs[0]) paragraphs[0].textContent = t.forbaseSysAdminDescIntern;
-    if (textSpan) textSpan.textContent = t.usedTech;
-    if (paragraphs[1]) paragraphs[1].textContent = t.forbaseTech2;
+    if (paragraphs[1]) renderTechBadges(paragraphs[1], t.forbaseTech2);
   }
 
   // Projects section
